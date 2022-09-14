@@ -2,10 +2,9 @@
 #include <stdlib.h>
 #include <time.h>
 
-/*
- * main - Entry point
+/**
+ * main - prints the alphabet in lowercase, followed by a new line
  *
- * Description: 'Print alphabet in lower case'
  *
  * Return: Always 0 (Success)
  */

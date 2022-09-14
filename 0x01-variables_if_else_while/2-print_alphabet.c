@@ -1,11 +1,9 @@
 #include <stdio.h>
-#include <stdlib.h>
-#include <time.h>
-
 /**
- * main - prints the alphabet in lowercase, followed by a new line
- *
- *
+ * main- program that prints the alphabet in lowercase followed by a new line.
+ * only use the putchar function
+ * All your code should be in the main function
+ * You can only use putchar twice in your code
  * Return: Always 0 (Success)
  */
 int main(void)
@@ -15,5 +13,6 @@ int main(void)
 	for (low = 'a'; low <= 'z'; low++)
 	putchar(low);
 	printf("\n");
+
 	return (0);
 }

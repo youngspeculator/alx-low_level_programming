@@ -2,7 +2,7 @@
 /**
  * print_last_digit - prints the last digit of a number
  *
- * @n - int to be observed
+ * @n: integer whose last digit will be printed
  *
  * Return: int
  */

@@ -1,19 +1,18 @@
-#include <stdio.h>
+#include "main.h"
 /**
  *main - prints "_putchar" followed by a new line
  *Return: Always (0) Success
  */
 int main(void)
 {
-	char S[] = "_putchar";
-	int i = 0;
+	char *sh = "_putchar";
 
-	while (S[i] != '\0')
+	while (*sh)
 	{
-		putchar(S[i]);
-		i++;
+		_putchar(*sh);
+		sh++;
 	}
-	putchar(10);
+	_putchar('\n');
 
 	return (0);
 }

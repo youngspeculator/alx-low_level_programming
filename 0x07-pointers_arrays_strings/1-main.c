@@ -26,15 +26,15 @@ void simple_print_buffer(char *buffer, unsigned int size)
 		printf("0x%02x", buffer[i]);
 		i++;
 	}
-	printf("\n")
+	printf("\n");
 }
 
 /**
  * main - check the code
  *
- * Retuen: Always 0.
+ * Return: Always 0.
  */
-int man(void)
+int main(void)
 {
 	char buffer[98] = {0};
 	char buffer2[98] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14};

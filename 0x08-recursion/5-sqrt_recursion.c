@@ -20,7 +20,7 @@ int _sqrt_recursion(int n)
  * squareroot - checks whether or not number is a perfect square.
  * @n: input
  * @i: counter
- * Return: if square root
+ * Return: squareroot
  */
 int squareroot(int n, int i)
 {

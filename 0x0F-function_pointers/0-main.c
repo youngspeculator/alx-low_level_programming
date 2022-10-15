@@ -6,7 +6,7 @@
 /**
  * print_name_as_is - prints name as is
  * @name: name of person
- * @f: function pointer
+ *
  * Return: Nothing.
  */
 void print_name_as_is(char *name)
@@ -23,6 +23,7 @@ void print_name_as_is(char *name)
 void print_name_uppercase(char *name)
 {
 	unsigned int i;
+
 	printf("Hello, my uppercase name is ");
 	i = 0;
 	while (name[i])

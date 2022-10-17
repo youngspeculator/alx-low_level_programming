@@ -1,7 +1,6 @@
 #include <stdio.h>
 /**
- * main - prints the alphabet in lowercase then in uppercase,
- *		followed by a new line
+ * main - prints alphabet in lowercase then in UPPERCASE followed by newline
  * only use the putchar function.
  * All your code should be in the main function.
  * You can only use putchar three times in your code.
@@ -11,16 +10,17 @@ int main(void)
 {
 	char c = 'a';
 	char C = 'A';
-		while (c <= 'z')
-		{
-			putchar(c);
-			c++;
-		}
-		while (C <= 'Z')
-		{
-			putchar(C);
-			C++;
-		}
+
+	while (c <= 'z')
+	{
+		putchar(c);
+		c++;
+	}
+	while (C <= 'Z')
+	{
+		putchar(C);
+		C++;
+	}
 	putchar('\n');
 
 	return (0);

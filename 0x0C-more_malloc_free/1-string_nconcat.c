@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 #include <stdlib.h>
 
 /**
@@ -13,32 +14,33 @@
  * @s1: string 1 pointer
  * @s2: string 2 pointer
  * @n: number of bytes
- * Return: pointer to a newly allocated space in memory [...]
+ * Return: Null upon failure.
  */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-	char *str;
-	unsigned int index, index2, len1, len2;
+	char *p;
+	unsigned int i, j, ns, x;
 
 	if (s1 == 0)
 		s1 = "";
 	if (s2 == 0)
 		s2 = "";
-	len1 = 0;
-	while (*(s1 + len1))
-		len1++;
-	len2 = 0;
-	while (*(s2 + len2))
-		len2++;
-	if (n >= len2)
-		n = len2;
-	str = malloc(sizeof(char) * (len1 + n + 1));
-	if (str == 0)
-		return (0);
-	for (index = 0; index < len1; index++)
-		*(str + index) = *(s1 + index);
-	for (index2 = 0; index2 < n; index2++)
-		*(str + index2) = *(s2 + index2);
-	*str + index = '\0';
-	return (str);
+
+	for (i = 0; s1[i] != '\0'; i++)
+		;
+	for (j = 0; s2[j] != '\0'; j++)
+		;
+	if (n > j)
+		n = j;
+	ns = i + n;
+	p = malloc(ns + 1);
+	if (p == NULL)
+		return (NULL);
+	for (x = 0; x < ns; x++)
+		if (x < i)
+			p[x] = s1[x];
+		else
+			p[x] = s2[x - i];
+	p[x] = '\0';
+	return (p);
 }

@@ -4,7 +4,7 @@
  * tester - tests the input
  * @n: number compared
  * @base: base to check
- * @Return: natural sqaure root of a number
+ * Return: natural sqaure root of a number
  */
 int tester(int n, int base)
 {

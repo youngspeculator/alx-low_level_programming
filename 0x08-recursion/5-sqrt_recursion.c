@@ -4,7 +4,7 @@
  * tester - tests the input
  * @n: number compared
  * @base: base to check
- * @Return: natural sqayre root of a number
+ * @Return: natural sqaure root of a number
  */
 int tester(int n, int base)
 {
@@ -12,7 +12,7 @@ int tester(int n, int base)
 		return (n);
 	if (n * n > base)
 		return (-1);
-	return (tester (n + 1, base));
+	return (tester(n + 1, base));
 }
 
 /**
@@ -25,5 +25,5 @@ int tester(int n, int base)
  */
 int _sqrt_recursion(int n)
 {
-	return (tester (1, n));
+	return (tester(1, n));
 }

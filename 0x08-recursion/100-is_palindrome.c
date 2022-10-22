@@ -1,49 +1,48 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
  * is_palindrome - returns 1 if a string is a palindrome and 0 if not
- * An empty string is a palindrome
+ * An empty string is a palindromei
+ * A palindrome is a word/phrase/sentence that reasa the same fwd and back
  * @s: string input
- * Return: int
+ * Return: 1 if str is palindrome, 0 if not.
  */
 int is_palindrome(char *s)
 {
-	int len = _strlen_recursion(s), i = 0;
+	int len = _strlen_recursion(s);
+	int count = 0;
 
-	if (len == 0)
-		return (1);
-	return (palindrome_check(s, len - 1, i));
+	return (checker(s, len - 1, count));
 }
 
 /**
  * _strlen_recursion - returns the length of a string
  * @s: string input
- * Return: int
+ * Return: length of the str
  */
 int _strlen_recursion(char *s)
 {
-	int len;
-
-	if (*s == '\0')
-		return (0);
-	len = _strlen_recursion(s + 1);
-	return (len + 1);
+	if (*s)
+	{
+		s++;
+		return (1 + _strlen_recursion(s));
+	}
+	return (0);
 }
 
 /**
- * palindrome_check - returns 1 if a string is a palindrome and 0 if not
- * @s: string input
+ * checker - helper function for is_palindrome
+ * @str: string input
  * @len: length of string
- * @i:counter variable
- * Return: int
+ * @count: counter of recursion
+ * Return: 1 if str is palindrome, 0 if not.
  */
-int palindrome_check(char *s, int len, int i)
+int checker(char *str, int len, int count)
 {
-	if (len == i)
+	if (count >= len)
 		return (1);
-	else if (s[len] != s[i])
-		return (0);
-	if (i < len)
-		return (palindrome_check(s, --len, ++i));
-	return (1);
+	if (str[len] == str[count])
+		return (checker(str, len - 1, count + 1));
+	return (0);
 }

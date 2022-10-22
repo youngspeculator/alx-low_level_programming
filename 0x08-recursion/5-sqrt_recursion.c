@@ -1,4 +1,19 @@
-#include "main.h"
+#include <stdio.h>
+
+/**
+ * tester - tests the input
+ * @n: number compared
+ * @base: base to check
+ * @Return: natural sqayre root of a number
+ */
+int tester(int n, int base)
+{
+	if (n * n == base)
+		return (n);
+	if (n * n > base)
+		return (-1);
+	return (tester (n + 1, base));
+}
 
 /**
  * _sqrt_recursion - returns the natural square root of a number.
@@ -6,28 +21,9 @@
  * @n: input
  * if n does not have a natural square root, the function should return -1
  *
- * Return: Always 0.
+ * Return: the natural sqaure root of number n
  */
 int _sqrt_recursion(int n)
 {
-	if (n < 0)
-		return (-1);
-	else
-		return (squareroot(n, (n + 1) / 2));
-}
-
-/**
- * squareroot - checks whether or not number is a perfect square.
- * @n: input
- * @i: counter
- * Return: squareroot
- */
-int squareroot(int n, int i)
-{
-	if (i < 1)
-		return (-1);
-	else if (i * i == n)
-		return (i);
-	else
-		return (squareroot(n, i - 1));
+	return (tester (1, n));
 }

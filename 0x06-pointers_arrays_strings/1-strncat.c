@@ -8,23 +8,20 @@
  * @dest: 1st string
  * @src: 2nd string
  * @n: number of char to include from appeded string
- * Return: char pointer
+ * Return: string pointer
  */
 char *_strncat(char *dest, char *src, int n)
 {
-	int i = 0, j = 0;
-	char *p;
+	int i, j;
 
-	while (*(dest + i) != '\0')
-		i++;
-	while (*(src + j) == '\0' || j == n)
+	i = 0;
+	for (j = 0; dest[j] != '\0'; j++)
+		;
+	while (src[i] != '\0' && i < n)
 	{
-		*(dest + i) = *(src + j);
+		dest[i + j] = src[i];
 		i++;
-		j++;
 	}
-	*(dest + i) = '\0';
-	p = dest;
-	return (p);
+	return (dest);
 }
 

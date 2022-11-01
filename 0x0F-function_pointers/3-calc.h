@@ -1,10 +1,11 @@
+#ifndef CALC_H
+#define CALC_H
+
 #include "function_pointers.h"
 #include <stdio.h>
 #include <stddef.h>
 #include <stdlib.h>
 
-#ifndef CALC_H
-#define CALC_H
 
 /**
  * struct op - Struct op

@@ -1,7 +1,6 @@
 #include "3-calc.h"
 #include <stdlib.h>
 #include <stdio.h>
-#include <stddef.h>
 
 /**
  * get_op_func - function that selects the correct function[...]
@@ -20,14 +19,13 @@ int (*get_op_func(char *s))(int, int)
 		{"%", op_mod},
 		{NULL, NULL}
 	};
+
 	int i = 0;
 
-	while (i < 5)
+	while (op_s[i].op)
 	{
-		if (*ops[i].op == *s && !(*(s + 1)))
-		{
+		if (*ops[i].op == *s)
 			return (ops[i].f);
-		}
 		i++;
 	}
 	return (NULL);

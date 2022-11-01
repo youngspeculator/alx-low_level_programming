@@ -2,7 +2,8 @@
 
 /**
  * int_index - returns the index of element 1[...]
- * for which the cmp function does not return 0. 
+ * for which the cmp function does not return 0.
+ * @array: array
  * @size: the number of elements in the array array
  * @cmp: a pointer to the function to be used to compare values
  *

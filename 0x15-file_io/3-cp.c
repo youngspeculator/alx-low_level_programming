@@ -1,5 +1,6 @@
 #include "main.h"
 #include <stdio.h>
+#include <stdlib.h>
 
 /**
  * error_file - checks if file can be opened.
@@ -8,7 +9,7 @@
  * @argv: argumenys vector
  * Return: no return
  */
-void error_file(int file_from, in t file_to, char *argv[])
+void error_file(int file_from, int file_to, char *argv[])
 {
 	if (file_from == -1)
 	{

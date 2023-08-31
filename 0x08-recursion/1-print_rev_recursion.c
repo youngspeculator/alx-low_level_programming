@@ -9,8 +9,8 @@ void _print_rev_recursion(char *s)
 {
 	if (*s != '\0')
 	{
-		_putchar(*s); /*prints the current character*/
 		_print_rev_recursion(s + 1); /*recurs for the rest of the string*/
+		_putchar(*s); /*prints the current char*/
 	}
 	else
 		return;

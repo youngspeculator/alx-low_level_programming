@@ -24,7 +24,7 @@ for (count1 = 0; s1[count1]; count1++)
 for (count2 = 0; s2[count2]; count2++)
 ;
 concat =  count1 + count2 + 1;
-p = malloc(concat * sizeof(char));
+p = malloc(concat *sizeof(char));
 if (p == NULL)
 return (NULL);
 for (i = 0; i < concat; i++)

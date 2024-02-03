@@ -3,15 +3,15 @@
 
 /**
  * _print_rev_recursion - prints a string in reverse
+ * @s: the character at any given time n
  */
 void _print_rev_recursion(char *s)
 {
-	// check if the current character is null terminator 
+	/** check if the current character is null terminator */
 	if (*s == '\0')
 	{
 		return;
 	}
-
-	_print_rev_recursion(s + 1); // recurs for the rest of the string  
-	_putchar(*s); // prints the current char
+	_print_rev_recursion(s + 1); /** recurs for the rest of the string*/
+	_putchar(*s); /** prints the current char*/
 }

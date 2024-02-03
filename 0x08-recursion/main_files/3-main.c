@@ -3,22 +3,20 @@
 
 /**
  * main - check the code
+ *
  * Return: Always 0
  */
 int main(void)
 {
 int r;
-r = _pow_recursion(1, 10);
+
+r = factorial(1);
 printf("%d\n", r);
-r = _pow_recursion(1024, 0);
+r = factorial(5);
 printf("%d\n", r);
-r = _pow_recursion(2, 16);
+r = factorial(10);
 printf("%d\n", r);
-r = _pow_recursion(5, 2);
-printf("%d\n", r);
-r = _pow_recursion(5, -2);
-printf("%d\n", r);
-r = _pow_recursion(-5, 3);
+r = factorial(-1024);
 printf("%d\n", r);
 return (0);
 }

@@ -14,4 +14,5 @@ int palindrome_check(char *s, int len, int i);
 int checker(char *s, int len, int i);
 int _putchar(char c);
 
-#endif /*MAIN_H*/
+#endif/*MAIN_H*/
+

@@ -9,6 +9,7 @@
 int main(void)
 {
 int r;
+
 r = is_prime_number(1);
 printf("%d\n", r);
 r = is_prime_number(1024);

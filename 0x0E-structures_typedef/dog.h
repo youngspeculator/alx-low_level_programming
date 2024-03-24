@@ -4,6 +4,7 @@
 
 /**
  * struct dog - contains info on the dog
+ * dog_t - new name for the struct dog type
  * @name: name of the dog
  * @age: age of the dog
  * @owner: owner of the dog

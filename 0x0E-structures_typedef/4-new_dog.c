@@ -5,14 +5,8 @@
 /**
 new_dog - function that creates a new dog
 you have to store a copy of name and owner
+return NULL if the function fails 
 **/
-
-//define struct dog and attribute members to dog_t
-typedef struct dog {
-	char *name;
-	float age;
-	char *owner;
-} dog_t;
 
 dog_t *new_dog(char *name, float age, char *owner){
 	//declare `new_dog_pntr` as a pointer to `dog_t` 

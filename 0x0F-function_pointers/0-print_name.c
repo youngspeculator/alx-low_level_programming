@@ -10,11 +10,13 @@
 
 void print_name(char *name, void (*f)(char *)
 {
-/**
- * declaring some varaibles to describe shit that will be operational in my code
+/*
+ * declaring some varaibles to describe shit that will be operational in my /
+ * code
  * decalaring `parameters` in case there is invalid input into my code
- * first instinct when dealing with pointers is the allocation and deallocation of memory : LOOK MORE INTO THIS
- * declare the pointer : GOOD THINKING BUT IT'S ALREADY DECLARED
+ * first instinct when dealing with pointers is the allocation and /
+ * deallocation of memory  LOOK MORE INTO THIS
+ * declare the pointer  GOOD THINKING BUT IT'S ALREADY DECLARED
  */
 
 if (name == NULL || f == NULL)

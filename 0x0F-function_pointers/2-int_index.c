@@ -18,7 +18,7 @@ int index_counter;
 /** iterates over the array elems & applies cmp function to each elem */ 
 /** if compare function succeeds for any elem it returns the index of that elem */
 
-if (array == 0 && cmp == 0 && size > 0)
+if (array == 0 && cmp == 0 && size == 0)
 return (-1);
 
 for (index_counter = 0; index_counter < size; index_counter++)

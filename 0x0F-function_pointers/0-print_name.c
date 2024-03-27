@@ -8,7 +8,7 @@
  * Return: NULL upon success
  */
 
-void print_name(char *name, void (*f)(char *)
+void print_name(char *name, void (*f)(char *))
 {
 /*
  * declaring some varaibles to describe shit that will be operational in my /

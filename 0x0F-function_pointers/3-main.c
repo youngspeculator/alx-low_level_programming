@@ -13,7 +13,7 @@ int main(int argc, char *argv[])
 int a, b;
 int (*operation)(int, int);
 
-if (argc != 4) /*check if argument count is equal to 4*/
+if (argc > 4) /*check if argument count is greater than 4*/
 {
 printf("Error. Invalid number of arguments!\n");
 exit(98);
@@ -24,6 +24,7 @@ if (argv[2][1]) /*check if the argument vector is longer than one char*/
 printf("Error. Input is too long!\n"); /*Error message*/
 exit(99); /*exit status*/
 }
+
 operation = get_op_func(argv[2]);
 
 if (operation == NULL)
@@ -38,4 +39,3 @@ b = atoi(argv[3]);
 printf("%d\n", operation(a, b));
 return (0);
 }
-

@@ -16,7 +16,10 @@ int set_bit(unsigned long int *n, unsigned int index);
 /* sets value of a bit to 1 at index */
 
 int _putchar(char c);
-/* own putchar function  */
+/* own putchar function */
+
+int clear_bit(unsigned long int *n, unsigned int index);
+/* sets the value of a bit to 0 at a given index */
 
 
 #endif /*MAIN_H*/

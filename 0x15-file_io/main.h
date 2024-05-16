@@ -12,7 +12,7 @@
 /* reads a text file and prints it to the POSIX standard output */
 ssize_t read_textfile(const char *filename, size_t letters);
 
-/* creates a file */ 
+/* creates a file */
 int create_file(const char *fileame, char *text_content);
 
 /* appends text at the end of the file */
